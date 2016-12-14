@@ -1,0 +1,22 @@
+print "Starting maya loading and fbx conversion \n";
+			
+if (`file -q -exists "C:/Users/Adriana/DOCUME~1/planarDye/Assets/planar die.mb"`)
+{
+	file -o "C:/Users/Adriana/DOCUME~1/planarDye/Assets/planar die.mb";
+	FBXExportEmbeddedTextures -v false;
+	// FBXExportHardEdges -v true;
+	FBXExportApplyConstantKeyReducer -v false;
+	FBXExportShowUI -v false;
+
+	print "Before fbx export\n";
+	FBXExport -f "C:/Users/Adriana/DOCUME~1/planarDye/Temp/ExportedFBXFile.fbx";
+	print "after fbx export\n";
+}
+else
+	print "Could not open Maya file.";
+
+system ("del \"C:\\Users\\Adriana\\DOCUME~1\\planarDye\\Temp\\CommandPipe\"");
+
+$donepipeKill = `fopen "C:/Users/Adriana/DOCUME~1/planarDye/Temp/SyncPipeKill" "w"`;
+fwrite $donepipeKill "Done";
+fclose $donepipeKill;

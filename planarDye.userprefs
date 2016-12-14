@@ -1,0 +1,15 @@
+﻿<Properties>
+  <MonoDevelop.Ide.Workspace />
+  <MonoDevelop.Ide.Workbench ActiveDocument="..\rawrSauceGrandAdventure\Assets\Scripts\Enemies\searching\simpleSearch.cs">
+    <Files>
+      <File FileName="..\rawrSauceGrandAdventure\Assets\Scripts\Enemies\searching\simpleSearch.cs" Line="17" Column="2" />
+      <File FileName="..\rawrSauceGrandAdventure\Assets\Scripts\Enemies\targeting\coneRange.cs" Line="8" Column="29" />
+      <File FileName="..\rawrSauceGrandAdventure\Assets\Scripts\Enemies\movement\randomCircle.cs" Line="31" Column="3" />
+      <File FileName="..\rawrSauceGrandAdventure\Assets\Scripts\movement.cs" Line="42" Column="5" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>
